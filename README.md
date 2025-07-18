@@ -161,3 +161,80 @@ src/
 │   └── utils.ts               # Helper functions
 ├── assets/                    # Images, sprites
 └── App.tsx                    # App entry point
+```
+## 🎨 Game Assets
+
+### Sprites Used
+- **Player Ship:** `playerShip3_blue.png`
+- **Enemies:** `enemyRed1.png` – `enemyRed5.png`
+- **Boss:** `ufoRed.png`
+
+### Requirements
+- **Format:** PNG
+- **Size:**
+  - **Ships:** 64×64px  
+  - **Bosses:** 128×128px or larger
+
+---
+
+## ⚙️ Build & Deployment
+
+```bash
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
+
+# Lint the codebase
+npm run lint
+```
+## 🎯 Performance Optimizations
+
+- 🔁 **Object Pooling** – Reuse bullets and particles
+- 🎯 **Optimized Collisions** – Efficient detection logic
+- 🖼️ **Canvas Tuning** – Minimized redraws
+- 🎧 **Audio Caching** – Preloaded sound buffers
+- 🧹 **Memory Cleanup** – Automatic object disposal
+
+---
+
+## 🔧 Configuration
+
+You can modify game parameters in the following files:
+
+| Parameter         | File                    |
+|------------------|-------------------------|
+| Enemy Difficulty | `Enemy.ts`              |
+| Wave Timing      | `Level.ts`              |
+| Weapon Balance   | `Player.ts`, `Pickup.ts`|
+| Boss Behavior    | `Boss.ts`               |
+
+---
+
+### 🎚️ Audio Settings
+
+- Master volume and sound category toggles: `AudioManager.ts`
+- Automatic audio context initialization with fallback support
+
+---
+
+## 🤝 Contributing
+
+```bash
+# 1. Fork the repository
+# 2. Create a feature branch
+git checkout -b feature/amazing-feature
+
+# 3. Make your changes
+git commit -m "Add amazing feature"
+
+# 4. Push and open a PR
+git push origin feature/amazing-feature
+```
+**Made with ❤️ and lots of ☕**  
+Enjoy the game, and may your aim be true! 🎯
+
