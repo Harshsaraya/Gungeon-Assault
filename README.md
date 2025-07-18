@@ -96,6 +96,7 @@
 
 ### Setup Instructions
 
+
 ```bash
 # Clone the repo
 git clone https://github.com/yourusername/gungeon-assault.git
@@ -109,3 +110,166 @@ npm run dev
 
 # Open in browser
 http://localhost:5173
+
+```
+🎮 Usage
+Controls
+🖥 Desktop
+Movement: W, A, S, D
+
+Aim & Shoot: Mouse cursor + left click
+
+Reload: R
+
+Pause: ESC
+
+📱 Mobile
+Movement: Virtual joystick (bottom left)
+
+Shooting: Fire button (bottom right)
+
+Reload: Reload button (right side)
+
+Gameplay Tips
+💡 Manage Your Ammo: Reload strategically
+
+⚡ Collect Power-ups: Enemies drop upgrades
+
+🧠 Boss Phases: Expect aggressive patterns
+
+🔺 Formation Awareness: Stay alert
+
+🚀 Weapon Upgrades: Tier up for stronger firepower
+
+🏗️ Project Structure
+bash
+Copy
+Edit
+src/
+├── components/          
+│   └── GameCanvas.tsx   # Main game canvas
+├── game/                
+│   ├── GameEngine.ts    # Core engine
+│   ├── Player.ts        # Player logic
+│   ├── Enemy.ts         # Enemy AI
+│   ├── Boss.ts          # Boss mechanics
+│   ├── Particle.ts      # Particle effects
+│   ├── AudioManager.ts  # Sound management
+│   ├── Level.ts         # Wave progression
+│   ├── Pickup.ts        # Power-ups
+│   ├── TouchControls.ts # Mobile controls
+│   ├── BackgroundRenderer.ts # Background rendering
+│   ├── CampaignManager.ts    # Campaign mode logic
+│   ├── RoomTransition.ts     # Transitions
+│   ├── types.ts         # Type definitions
+│   └── utils.ts         # Helper functions
+├── assets/              # Images, sprites
+└── App.tsx              # App entry point
+🎨 Game Assets
+Sprites Used
+Player Ship: playerShip3_blue.png
+
+Enemies: enemyRed1.png – enemyRed5.png
+
+Boss: ufoRed.png
+
+Requirements
+Format: PNG
+
+Size: Ships – 64×64px, Bosses – 128×128px or larger
+
+⚙️ Build & Deployment
+bash
+Copy
+Edit
+# Start dev server
+npm run dev
+
+# Production build
+npm run build
+
+# Preview production
+npm run preview
+
+# Lint code
+npm run lint
+🎯 Performance Optimizations
+Object Pooling – Reuse bullets and particles
+
+Optimized Collisions – Efficient detection logic
+
+Canvas Tuning – Minimized redraws
+
+Audio Caching – Pre-loaded sound buffers
+
+Memory Cleanup – Automatic object disposal
+
+🔧 Configuration
+Modify game parameters via source files:
+
+Parameter	File
+Enemy Difficulty	Enemy.ts
+Wave Timing	Level.ts
+Weapon Balance	Player.ts, Pickup.ts
+Boss Behavior	Boss.ts
+
+Audio Settings
+Volume control in AudioManager.ts
+
+Individual toggles for sound categories
+
+Auto init with fallback for older browsers
+
+🤝 Contributing
+bash
+Copy
+Edit
+# 1. Fork the repository
+# 2. Create a branch
+git checkout -b feature/amazing-feature
+
+# 3. Make your changes and commit
+git commit -m "Add amazing feature"
+
+# 4. Push and open a PR
+git push origin feature/amazing-feature
+Guidelines
+Use TypeScript best practices
+
+Keep formatting consistent
+
+Add comments for complex logic
+
+Test on desktop + mobile
+
+Target 60+ FPS always
+
+📝 License
+This project is licensed under the MIT License – see the LICENSE file for details.
+
+🙏 Acknowledgments
+Vite
+
+React
+
+TypeScript
+
+Tailwind CSS
+
+Web Audio API – For dynamic sound generation
+
+📞 Support
+If you encounter issues or bugs:
+
+Check the Issues
+
+Create a new issue with:
+
+Browser + OS
+
+Device info (if mobile)
+
+Screenshots or steps to reproduce
+
+Made with ❤️ and lots of ☕
+Enjoy the game, and may your aim be true! 🎯
