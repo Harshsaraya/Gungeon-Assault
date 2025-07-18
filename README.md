@@ -7,7 +7,8 @@
 
 > **An advanced top-down space shooter game featuring epic UFO boss battles, dynamic particle effects, and professional game mechanics.**
 
-![Game Screenshot](https://via.placeholder.com/800x400/1a1a2e/ffffff?text=Gungeon+Assault+Game+Screenshot)
+<img width="1919" height="977" alt="image" src="https://github.com/user-attachments/assets/9fae1755-01db-4369-97e9-4560079f3993" />
+
 
 ---
 
